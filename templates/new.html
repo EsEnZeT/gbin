@@ -7,8 +7,6 @@
 {{end}}
 
 <form class="well" method="POST" action="/paste/create">
-
-
   <p>
     <div class="progress progress-striped active">
       <div class="bar"></div>
@@ -17,15 +15,12 @@
   </p>
 
   {{if .Settings.EnableCaptcha}}
-
   <div class="row-fluid">
     <div class="span12">
       <div class="row-fluid">
 
           <div class="span6">
-
   {{end}}
-
               <div>
                   <div class="form_left">
                       Expiration:
@@ -39,9 +34,7 @@
                       </select>
                   </div>
               </div>
-
   {{if .Settings.EnableCaptcha}}
-
                 <div>
                     <div class="form_left">
                         Captcha:
@@ -51,7 +44,6 @@
                         <input type=hidden id="captchaId" name=captchaId value="{{.CaptchaId}}">
                     </div>
                 </div>
-
           </div>
 
             <div class="span6">
