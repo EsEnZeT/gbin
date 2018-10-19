@@ -12,7 +12,7 @@ How it works
 
 When pasting a text into gbin:
 
-![Encryption image](http://julianyap.com/g0bin/images/encryption.png)
+![Encryption image](https://raw.githubusercontent.com/modInfo/gbin/master/encryption.png)
 
  * You paste your text in the browser and click the “Submit” button.
  * A random 256 bits key is generated in the browser.
@@ -23,7 +23,7 @@ When pasting a text into gbin:
 
 When opening a gbin URL:
 
-![Decryption image](http://julianyap.com/g0bin/images/decryption.png)
+![Decryption image](https://raw.githubusercontent.com/modInfo/gbin/master/decryption.png)
 
  * The browser requests encrypted data from the server
  * The decryption key is in the anchor part of the URL (#…) **which is never sent to the server**.
