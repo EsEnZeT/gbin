@@ -62,7 +62,7 @@ Here are some items which are in the Python implemention which have not been imp
  * Paste ID length
  * Clone paste
 
-Copyright (c) 2016 Julian Yap
+Copyright (c) 2016 Julian Yap  
 Copyright (c) 2018 Sebastian Korotkiewicz
 
 
