@@ -1,27 +1,16 @@
-g0bin
+gbin
 =====
 
-G0Bin is a client side encrypted pastebin.  The server has zero knowledge of pasted data.  Data is encrypted/decrypted in the browser using 256 bits AES.
+gbin is a client side encrypted pastebin.  The server has zero knowledge of pasted data.  Data is encrypted/decrypted in the browser using 256 bits AES.
 
 **DEMO: https://paste.itunix.eu/**
 
-G0Bin is a Go port of [0bin](https://github.com/sametmax/0bin/) (written in Python).  0bin in turn is an implementation of the [ZeroBin](https://github.com/sebsauvage/ZeroBin/) project (written in PHP).
-
-This project was created mostly as a Go learning exercise through converting a project I use often.  It also serves as a great sample project in Go since it only uses the standard library.
-
-Here are some elements that are have been implemented.
-
- * [Nested HTML Templates](http://stackoverflow.com/questions/9573644/go-appengine-how-to-structure-templates-for-application/9587616#9587616)
- * [Using Anonymous Structs to pass data to HTML Templates](http://julianyap.com/2013/09/23/using-anonymous-structs-to-pass-data-to-templates-in-golang.html)
- * [Hot configuration reload from a JSON configuration file](http://openmymind.net/Golang-Hot-Configuration-Reload/)
- * [HTTP server logging](https://groups.google.com/forum/#!topic/golang-nuts/s7Xk1q0LSU0)
-
-NOTE: The demo was modified to run on Google App Engine using the Datastore API.
+gbin is a Go port of [0bin](https://github.com/sametmax/0bin/) (written in Python).  0bin in turn is an implementation of the [ZeroBin](https://github.com/sebsauvage/ZeroBin/) project (written in PHP).
 
 How it works
 ------------
 
-When pasting a text into G0Bin:
+When pasting a text into gbin:
 
 ![Encryption image](http://julianyap.com/g0bin/images/encryption.png)
 
@@ -32,7 +21,7 @@ When pasting a text into G0Bin:
  * The browser displays the final URL with the key.
  * The key is never transmitted to the server, which therefore cannot decrypt data.
 
-When opening a g0bin URL:
+When opening a gbin URL:
 
 ![Decryption image](http://julianyap.com/g0bin/images/decryption.png)
 
@@ -46,14 +35,14 @@ Install
 Clone this repository, build it and run it.
 
     go get github.com/dchest/captcha
-    git clone https://github.com/modInfo/g0bin
-    cd g0bin
+    git clone https://github.com/modInfo/gbin
+    cd gbin
     go build
-    ./g0bin
+    ./gbin
 
-To run G0Bin on a different port, modify the Port setting in config.json.
+To run gbin on a different port, modify the Port setting in config.json.
 
-The configuration of G0Bin can also be reloaded by sending a HUP signal to the process.
+The configuration of gbin can also be reloaded by sending a HUP signal to the process.
 
     kill -HUP [PROCESS ID]
 
@@ -74,6 +63,8 @@ Here are some items which are in the Python implemention which have not been imp
  * Clone paste
 
 Copyright (c) 2016 Julian Yap
+Copyright (c) 2018 Sebastian Korotkiewicz
 
-[MIT License](https://github.com/jyap808/g0bin/blob/master/LICENSE)
+
+[MIT License](https://github.com/modInfo/gbin/blob/master/LICENSE)
 
